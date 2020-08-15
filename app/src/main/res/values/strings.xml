@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Noors</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_activity_register">Register</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="cnic">CNIC</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="register">Register</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="active">Active Cases</string>
+    <string name="new_cases">New Cases</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="total_recovered">Total Recovered</string>
+    <string name="start">Start</string>
+    <string name="self_assessment">Self Assessment</string>
+    <string name="survey_question_1">Have you Recently traveled within the last 14 days?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="high_risk">High Risk</string>
+    <string name="medium_risk">Medium Risk</string>
+    <string name="low_risk">Low Risk</string>
+
+    <string name="survey_question_2">Are you experiencing any of the following symptoms? \nFever\nCough\nRunny nose\nSore throat</string>
+</resources>

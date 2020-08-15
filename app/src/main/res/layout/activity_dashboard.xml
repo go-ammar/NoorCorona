@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/activeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/active"
+        app:layout_constraintBottom_toTopOf="@+id/newData"
+        app:layout_constraintEnd_toStartOf="@+id/newText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard" />
+
+    <TextView
+        android:id="@+id/newText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_cases"
+        app:layout_constraintStart_toEndOf="@+id/activeText"
+        app:layout_constraintBottom_toTopOf="@id/newData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard" />
+
+    <TextView
+        android:id="@+id/deathsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_deaths"
+        app:layout_constraintBottom_toTopOf="@+id/recoveredData"
+        app:layout_constraintEnd_toStartOf="@+id/recoveredText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newData" />
+
+    <TextView
+        android:id="@+id/recoveredText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_recovered"
+        app:layout_constraintTop_toBottomOf="@+id/activeData"
+        app:layout_constraintBottom_toTopOf="@+id/recoveredData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deathsText"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        app:layout_constraintEnd_toStartOf="@+id/surveyBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deathsData" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/activeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active cases from API"
+        app:layout_constraintBottom_toTopOf="@+id/deathsText"
+        app:layout_constraintEnd_toStartOf="@+id/newData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activeText" />
+
+    <TextView
+        android:id="@+id/newData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New cases from API"
+        app:layout_constraintBottom_toTopOf="@+id/recoveredText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activeData"
+        app:layout_constraintTop_toBottomOf="@+id/newText" />
+
+    <TextView
+        android:id="@+id/deathsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deaths from API"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBtn"
+        app:layout_constraintEnd_toStartOf="@+id/recoveredData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deathsText" />
+
+    <TextView
+        android:id="@+id/recoveredData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recovered from API"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deathsData"
+        app:layout_constraintTop_toBottomOf="@+id/recoveredText" />
+
+    <Button
+        android:id="@+id/surveyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self Survey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settingsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/recoveredData" />
+</androidx.constraintlayout.widget.ConstraintLayout>
